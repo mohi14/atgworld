@@ -24,7 +24,7 @@ const HomeNavbar = () => {
 
                     </NavDropdown>
                 </Nav>
-                <Nav className='d-flex d-lg-none ms-auto mobile-nav'>
+                <Nav className='d-flex d-lg-none mobile-nav ms-auto'>
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="-0.00012207" width="10" height="10" fill="#868E96" />
                     </svg>
