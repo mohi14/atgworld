@@ -8,14 +8,14 @@ const PostNav = () => {
         <div className='post-nav nav-sticky position-sticky top-0 pt-5 bg-white pb-3'>
             <Navbar bg="white" variant="light" >
                 <Container className=' p-0 border-bottom pb-0'>
-                    <Nav className="me-auto fw-normal h-100">
+                    <Nav className="me-auto fw-normal ">
                         <li className='me-3 border-bottom border-dark pb-3'>All Post(32)</li>
                         <li className='me-3 text-muted'>Article</li>
                         <li className='me-3 text-muted'>Event</li>
                         <li className='me-3 text-muted'>Education</li>
                         <li className='text-muted'>Job</li>
                     </Nav>
-                    <Nav >
+                    <Nav className='pb-1'>
                         <button className='btn btn-light'>Write a Post <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg" className='ms-3'>
                             <path d="M0.416626 0.166626L4.99996 4.74996L9.58329 0.166626H0.416626Z" fill="black" />
                         </svg>

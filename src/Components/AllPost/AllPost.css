@@ -1,0 +1,13 @@
+.dropdown-toggle::after {
+    display: none;
+
+}
+
+.visit-text {
+    color: #E56135;
+    border: 1px solid #A9AEB8;
+}
+
+.apply-text {
+    color: #02B875
+}
