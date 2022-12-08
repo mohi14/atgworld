@@ -152,7 +152,7 @@ const AllPost = () => {
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card position-static">
+                    <div class="card position-static mb-5">
                         <div class="card-body">
                             <h6>💼️ Job</h6>
                             <h4 class="card-title mt-3">Software Developer</h4>
