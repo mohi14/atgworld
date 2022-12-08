@@ -1,0 +1,23 @@
+.search-location input {
+    outline: none;
+    border: none;
+    background-image: url(../../Assets/outline-location.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 4px 5px;
+    padding-bottom: 10px;
+}
+
+.search-location input::placeholder {
+    color: #000000;
+}
+
+.caution-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.top-sidebar {
+    top: 150px;
+}

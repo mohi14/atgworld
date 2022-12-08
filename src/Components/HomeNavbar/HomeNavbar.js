@@ -18,12 +18,17 @@ const HomeNavbar = () => {
                     <input type="search" className='search' placeholder='Search for your favorite groups in ATG' />
 
                 </Nav>
-                <Nav className=' justify-content-center align-items-center d-lg-flex d-none'>
-                    <p className='m-0 drop'>Create account. <span className='drop-down'>It’s free!</span></p>
-                    <NavDropdown id="basic-nav-dropdown" >
-
-                    </NavDropdown>
+                <Nav className='d-lg-flex d-none'>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <p className='m-0 drop d-inline'>Create account. <span className='drop-down'>It’s free!</span></p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" href="#">LogIn</button></li>
+                        </ul>
+                    </li>
                 </Nav>
+
                 <Nav className='d-flex d-lg-none mobile-nav ms-auto'>
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="-0.00012207" width="10" height="10" fill="#868E96" />

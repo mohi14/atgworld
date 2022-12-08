@@ -20,7 +20,8 @@
     background-image: url(../../Assets/search-icon.png);
     background-position: 17px 13px;
     background-repeat: no-repeat;
-    padding-left: 50px
+    padding-left: 50px;
+    padding-right: 10px
 }
 
 .search::placeholder {
@@ -59,6 +60,11 @@
 
 .nav-shape {
     margin-left: 8px;
+}
+
+.drop-item {
+
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width:688px) {
