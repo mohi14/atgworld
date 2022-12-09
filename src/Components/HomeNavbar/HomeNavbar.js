@@ -49,15 +49,16 @@ const HomeNavbar = () => {
                 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                     <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content ">
-                            <div class="modal-header" style={{
+                            <div class="modal-header d-none d-lg-flex" style={{
                                 backgroundColor: '#EFFFF4',
                                 color: '#008A45'
                             }}>
                                 <h1 class="modal-title fs-5 m-auto" id="exampleModalToggleLabel">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+                            <button type="button" class="btn-close ms-auto pe-5 d-block d-lg-none mt-4" data-bs-dismiss="modal" aria-label="Close"></button>
                             <div class="modal-body p-5 d-flex gap-5">
-                                <div className='w-50'>
+                                <div className='w-50 d-none d-lg-block'>
                                     <h1 className='fw-semibold'>Sign In</h1>
                                     <form className='mt-5'>
                                         <input type="email" className='w-100 bg-light form-control p-3 rounded-0 rounded-top border-bottom-0' placeholder='Email' />
@@ -79,30 +80,138 @@ const HomeNavbar = () => {
                                         <p className='text-center mt-4 fw-semibold'>Forgot Password?</p>
                                     </form>
                                 </div>
-                                <div className='w-50'>
+
+                                {/* mobile modal start */}
+                                <div className='w-100 d-block d-lg-none'>
+                                    <h1 className='fw-semibold'>Sign In</h1>
+                                    <form className='mt-5'>
+                                        <input type="email" className='w-100 bg-light form-control p-3 rounded-0 rounded-top border-bottom-0' placeholder='Email' />
+                                        <input type="password" className='w-100 bg-light form-control p-3 rounded-0 rounded-bottom password' placeholder='Password' />
+
+                                        <div className='d-flex  gap-3 justify-content-center'>
+                                            <div className='w-50 bg-primary text-center text-white my-4 p-3 rounded-pill fs-5 fw-semibold'>Sign In</div>
+                                            <button className='text-secondary btn btn-link    fw-semibold w-50' data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">or, Create Account</button>
+                                        </div>
+
+
+                                        <div className='w-100  text-center   pt-3 border fs-6  d-flex  gap-3 justify-content-center'>
+
+                                            <div> <img src={require('../../Assets/facebook-logo.png')} alt="" className='' /></div>
+                                            <p>Sign in with Facebook</p>
+
+                                        </div>
+
+                                        <div className='w-100  text-center  my-2 pt-3 border fs-6  d-flex  gap-3 justify-content-center'>
+
+                                            <div> <img src={require('../../Assets/google-logo.png')} alt="" className='' /></div>
+                                            <p>Sign in with Google</p>
+
+                                        </div>
+                                        <p className='text-center mt-4 fw-semibold'>Forgot Password?</p>
+                                    </form>
+                                </div>
+                                {/* mobile modal end */}
+
+
+                                <div className='w-50 d-none d-lg-block'>
                                     <p className='fw-semibold fs-5'>Don’t have an account yet? <button className='text-primary btn btn-link text-decoration-none fs-5 ps-0 mb-1 fw-semibold' data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Create new for free!</button></p>
                                     <img src={require('../../Assets/login-photo.png')} alt="" className='m-auto mt-5 ms-5' />
                                 </div>
 
                             </div>
-                            {/* <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button> */}
                         </div>
                     </div>
                 </div>
 
-
+                {/* sign up start */}
                 <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+
+                            <div class="modal-header d-none d-lg-flex" style={{
+                                backgroundColor: '#EFFFF4',
+                                color: '#008A45'
+                            }}>
+                                <h1 class="modal-title fs-5 m-auto" id="exampleModalToggleLabel">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                Hide this modal and show the first with the button below.
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                            <button type="button" class="btn-close ms-auto pe-5 d-block d-lg-none mt-4" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                            <div class="modal-body p-5 d-flex gap-5">
+                                <div className='w-50 d-none d-lg-block'>
+                                    <h1 className='fw-semibold'>Create Account</h1>
+                                    <form className='mt-5'>
+                                        <div className='d-flex'>
+                                            <input type="text" className='w-50 bg-light form-control p-3 rounded-0 border-end-0 rounded-start border-bottom-0' placeholder='First Name' />
+                                            <input type="text" className='w-50 bg-light form-control p-3 rounded-0 rounded-end border-bottom-0' placeholder='Last Name' />
+                                        </div>
+
+                                        <input type="email" className='w-100 bg-light form-control p-3 rounded-0  border-bottom-0' placeholder='Email' />
+                                        <input type="password" className='w-100 bg-light form-control p-3 rounded-0 border-bottom-0 password' placeholder='Password' />
+                                        <input type="password" className='w-100 bg-light form-control p-3 rounded-0 rounded-bottom' placeholder='Confirm Password' />
+
+                                        <div className='w-100 bg-primary text-center text-white my-4 p-3 rounded-pill fs-5 fw-semibold'>Create Account</div>
+                                        <div className='w-100  text-center   pt-3 border fs-6  d-flex  gap-3 justify-content-center'>
+
+                                            <div> <img src={require('../../Assets/facebook-logo.png')} alt="" className='' /></div>
+                                            <p>Sign up with Facebook</p>
+
+                                        </div>
+                                        <div className='w-100  text-center  my-2 pt-3 border fs-6  d-flex  gap-3 justify-content-center'>
+
+                                            <div> <img src={require('../../Assets/google-logo.png')} alt="" className='' /></div>
+                                            <p>Sign up with Google</p>
+
+                                        </div>
+                                    </form>
+                                </div>
+
+                                {/* mobile modal start */}
+                                <div className='w-100 d-block d-lg-none'>
+                                    <h1 className='fw-semibold'>Create Account</h1>
+                                    <form className='mt-5'>
+                                        <div className='d-flex'>
+                                            <input type="text" className='w-50 bg-light form-control p-3 rounded-0 border-end-0 rounded-start border-bottom-0' placeholder='First Name' />
+                                            <input type="text" className='w-50 bg-light form-control p-3 rounded-0 rounded-end border-bottom-0' placeholder='Last Name' />
+                                        </div>
+
+                                        <input type="email" className='w-100 bg-light form-control p-3 rounded-0  border-bottom-0' placeholder='Email' />
+                                        <input type="password" className='w-100 bg-light form-control p-3 rounded-0 border-bottom-0 password' placeholder='Password' />
+                                        <input type="password" className='w-100 bg-light form-control p-3 rounded-0 rounded-bottom' placeholder='Confirm Password' />
+
+                                        <div className='d-flex  gap-3 justify-content-center'>
+                                            <div className='w-50 bg-primary text-center text-white my-4 p-3 rounded-pill fs-5 fw-semibold'>Create Account</div>
+                                            <button className='text-secondary btn btn-link    fw-semibold w-50' data-bs-target="#exampleModalToggle" data-bs-toggle="modal">or, Sign In</button>
+                                        </div>
+
+
+                                        <div className='w-100  text-center   pt-3 border fs-6  d-flex  gap-3 justify-content-center'>
+
+                                            <div> <img src={require('../../Assets/facebook-logo.png')} alt="" className='' /></div>
+                                            <p>Sign in with Facebook</p>
+
+                                        </div>
+
+                                        <div className='w-100  text-center  my-2 pt-3 border fs-6  d-flex  gap-3 justify-content-center'>
+
+                                            <div> <img src={require('../../Assets/google-logo.png')} alt="" className='' /></div>
+                                            <p>Sign in with Google</p>
+
+                                        </div>
+
+                                    </form>
+                                    <p className='text-center mt-3'>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                                </div>
+                                {/* mobile modal end */}
+
+
+                                <div className='w-50 d-none d-lg-block'>
+                                    <p className='fw-semibold fs-5 text-end'>Already have an account? <button className='text-primary btn btn-link text-decoration-none fs-5 ps-0 mb-1 fw-semibold' data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign In</button></p>
+                                    <img src={require('../../Assets/login-photo.png')} alt="" className='m-auto mt-5 ms-5' />
+
+                                    <p className='mt-5 pt-5'>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
