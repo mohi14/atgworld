@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../Assets/whole.png'
 import './HomeNavbar.css'
 
 const HomeNavbar = () => {
+    const [user, setUser] = useState(false)
     const handleLogIn = () => {
+        setUser(true)
+    }
 
+    const handleLogOut = () => {
+        setUser(false)
     }
     return (
         <div>
@@ -20,28 +25,38 @@ const HomeNavbar = () => {
 
                 </Nav>
                 <Nav className='d-lg-flex d-none'>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {
+                        user ?
+                            <div className='d-flex align-items-center drop' onClick={handleLogOut}>
+                                <img src={require('../../Assets/profile4.png')} alt="" />
+                                <p className='mt-3 ms-3'>Siddharth Goyal <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg" className='ms-2'>
+                                    <path d="M0 0L5 5L10 0H0Z" fill="#2E2E2E" />
+                                </svg></p>
+                            </div>
+                            :
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
 
 
-                            <p className='m-0 drop d-inline'>Create account. <span className='drop-down'>It’s free!</span><svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg" className='ms-2'>
-                                <path d="M0 0L5 5L10 0H0Z" fill="#2E2E2E" />
-                            </svg>
-                            </p>
+                                    <p className='m-0 drop d-inline'>Create account. <span className='drop-down'>It’s free!</span><svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg" className='ms-2'>
+                                        <path d="M0 0L5 5L10 0H0Z" fill="#2E2E2E" />
+                                    </svg>
+                                    </p>
 
 
 
 
-                        </a>
-                        <ul class="dropdown-menu">
+                                </a>
+                                <ul class="dropdown-menu">
 
-                            {/* login modal start */}
-                            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" className='w-100'>
-                                <li><button class="dropdown-item" href="#" onClick={handleLogIn}>LogIn</button></li>
-                            </a>
-                        </ul>
-                    </li>
+                                    {/* login modal start */}
+                                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" className='w-100'>
+                                        <li><button class="dropdown-item" href="#" onClick={handleLogIn}>LogIn</button></li>
+                                    </a>
+                                </ul>
+                            </li>
+                    }
                 </Nav>
 
 
