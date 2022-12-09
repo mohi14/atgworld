@@ -12,6 +12,8 @@ const MobileLayout = () => {
                 </div>
             </div>
             <div class="row row-cols-1 g-3 my-1">
+
+
                 <div class="col p-0 shadow border-0 ">
                     <div class="card position-static">
                         <img src={require('../../Assets/article.png')} class="card-img-top" alt="..." />
@@ -87,13 +89,14 @@ const MobileLayout = () => {
                 </svg>
 
 
+
                 <div class="col p-0 shadow border-0">
                     <div class="card position-static">
                         <img src={require('../../Assets/Education.png')} alt="..." />
                         <div class="card-body m-3">
                             <h6>🔬️ Education</h6>
                             <div className='d-flex align-items-center justify-content-between'>
-                                <h4 class="card-title mt-3">Tax Benefits for Investment under National Pension Scheme launched by Government</h4>
+                                <h5 class="card-title mt-3">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
                                 <div>
                                     <button className='btn dropdown-toggle' data-bs-toggle="dropdown" aria-expanded="false">  <svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.6667 2.99996C14.6667 4.28329 15.7167 5.33329 17 5.33329C18.2834 5.33329 19.3334 4.28329 19.3334 2.99996C19.3334 1.71663 18.2834 0.666626 17 0.666626C15.7167 0.666626 14.6667 1.71663 14.6667 2.99996ZM12.3334 2.99996C12.3334 1.71663 11.2834 0.666626 10 0.666626C8.71671 0.666626 7.66671 1.71662 7.66671 2.99996C7.66671 4.28329 8.71671 5.33329 10 5.33329C11.2834 5.33329 12.3334 4.28329 12.3334 2.99996ZM5.33337 2.99996C5.33337 1.71662 4.28337 0.666625 3.00004 0.666625C1.71671 0.666625 0.666708 1.71662 0.666708 2.99996C0.666708 4.28329 1.71671 5.33329 3.00004 5.33329C4.28337 5.33329 5.33337 4.28329 5.33337 2.99996Z" fill="black" />
@@ -135,12 +138,27 @@ const MobileLayout = () => {
                     </div>
                 </div>
 
+
+
                 <div class="col p-0 shadow border-0">
                     <div class="card position-static">
                         <img src={require('../../Assets/meetup.png')} alt="..." />
                         <div class="card-body m-3">
                             <h6>🗓️ Meetup</h6>
-                            <h4 class="card-title mt-3">Finance & Investment Elite Social Mixer @Lujiazui</h4>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                <h5 class="card-title mt-3">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                                <div>
+                                    <button className='btn dropdown-toggle  ' data-bs-toggle="dropdown" aria-expanded="false">  <svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.6667 2.99996C14.6667 4.28329 15.7167 5.33329 17 5.33329C18.2834 5.33329 19.3334 4.28329 19.3334 2.99996C19.3334 1.71663 18.2834 0.666626 17 0.666626C15.7167 0.666626 14.6667 1.71663 14.6667 2.99996ZM12.3334 2.99996C12.3334 1.71663 11.2834 0.666626 10 0.666626C8.71671 0.666626 7.66671 1.71662 7.66671 2.99996C7.66671 4.28329 8.71671 5.33329 10 5.33329C11.2834 5.33329 12.3334 4.28329 12.3334 2.99996ZM5.33337 2.99996C5.33337 1.71662 4.28337 0.666625 3.00004 0.666625C1.71671 0.666625 0.666708 1.71662 0.666708 2.99996C0.666708 4.28329 1.71671 5.33329 3.00004 5.33329C4.28337 5.33329 5.33337 4.28329 5.33337 2.99996Z" fill="black" />
+                                    </svg></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
                             <div className='d-flex align-items-center fw-semibold my-3'>
                                 <div className='d-flex align-items-center me-5'>
                                     <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,11 +207,26 @@ const MobileLayout = () => {
                     </div>
                 </div>
 
+
+
                 <div class="col  p-0 shadow border-0">
                     <div class="card position-static mb-5">
                         <div class="card-body m-3">
                             <h6>💼️ Job</h6>
-                            <h4 class="card-title mt-3">Software Developer</h4>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                <h5 class="card-title mt-3">Software Developer</h5>
+                                <div>
+                                    <button className='btn dropdown-toggle  ' data-bs-toggle="dropdown" aria-expanded="false">  <svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.6667 2.99996C14.6667 4.28329 15.7167 5.33329 17 5.33329C18.2834 5.33329 19.3334 4.28329 19.3334 2.99996C19.3334 1.71663 18.2834 0.666626 17 0.666626C15.7167 0.666626 14.6667 1.71663 14.6667 2.99996ZM12.3334 2.99996C12.3334 1.71663 11.2834 0.666626 10 0.666626C8.71671 0.666626 7.66671 1.71662 7.66671 2.99996C7.66671 4.28329 8.71671 5.33329 10 5.33329C11.2834 5.33329 12.3334 4.28329 12.3334 2.99996ZM5.33337 2.99996C5.33337 1.71662 4.28337 0.666625 3.00004 0.666625C1.71671 0.666625 0.666708 1.71662 0.666708 2.99996C0.666708 4.28329 1.71671 5.33329 3.00004 5.33329C4.28337 5.33329 5.33337 4.28329 5.33337 2.99996Z" fill="black" />
+                                    </svg></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
                             <div className='d-flex align-items-center fw-semibold my-3'>
                                 <div className='d-flex align-items-center me-5'>
                                     <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
